@@ -15,7 +15,8 @@ public class z1 : MonoBehaviour
 
     private IEnumerator Coroutine_Method()
     {
-        yield return null;
+        yield return new WaitForSeconds(1);
+
         Quaternion Rotation_Origin_Addend = Quaternion.Euler(0, 0, 180);
         Rotation_Origin = Gyroscope_Reference.attitude * Rotation_Origin_Addend;
 
